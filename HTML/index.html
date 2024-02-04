@@ -10,9 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../img/logo.png" />
+    <title>𝕄𝔼𝕁𝕀𝔻 | Portfolio</title>
   </head>
   <body>
+    <div id="spinner-container">
+      <div id="spinner"></div>
+    </div>
+
     <div class="nav-bar">
       <ul class="nav-container">
         <div>
@@ -58,9 +67,10 @@
       </div>
       <p class="" id="xv">
         <span>Who am I?</span>
-        Its me Mejid, 22 years old Developer, 💻 Learning Computer Science. I`m on a journey as a Junior
-        Developer, creating beautiful designs and Secure Systems with Great
-        UI/UX. I`m continually learning and adapting to new technologies.
+        Its me Mejid, 22 years old Developer, 💻 Learning Computer Science. I`m
+        on a journey as a Junior Developer, creating beautiful designs and
+        Secure Systems with Great UI/UX. I`m continually learning and adapting
+        to new technologies.
       </p>
     </div>
 
@@ -82,6 +92,7 @@
     <div class="projects-container">
       <div class="project p-1">
         <img src="../img/nodeauth.png" alt="" />
+        <p id="project-title">🛅 Authentication</p>
         <p>
           🔐 NodeJS based Authentication System. <br />
           🔑 Developed a Secure Authentication System using NodeJS and MSQL
@@ -107,29 +118,62 @@
       </div>
       <div class="project p-2">
         <img src="../img/estore.png" alt="" />
-        <p>🛒 E-store</p>
-        <p>E-store is an E-commerce website</p>
+        <p id="project-title">🛒 E-store</p>
+        <p>
+          🚀 E-Store is a dynamic and user-centric ecommerce website designed to
+          redefine your online shopping experience.
+        </p>
+        <div class="features">
+          <span>✅ Customer Login and signup</span>
+          <span>✅ Shopping Pages</span>
+          <span>✅ Cart and Checkout</span>
+          <span>✅ Admin Dashboard</span>
+        </div>
+        <h3 style="color: aqua">🚀 💻 Tech Used</h3>
+        <div class="tech-stack">
+          <span>#HTML</span>
+          <img src="../img/HTML.png" alt="" />
+          <span>#CSS</span>
+          <img src="../img/CSS.png" alt="" />
+          <span>#Javascript</span>
+          <img src="../img/JAVASCRIPT.png" alt="" />
+          <span>#PHP</span>
+          <img src="../img/php.png" alt="" />
+        </div>
       </div>
-      <div class="project p-3">
+      <!-- <div class="project p-3">
         <img src="../img/node.png" alt="" />
+        <p class="project-title"></p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quia
           mollitia consectetur labore, nobis aliquid doloribus molestias
           commodi? Reiciendis alias tempora impedit facilis eum rem pariatur
           consequuntur est expedita iure.
         </p>
-      </div>
+      </div> -->
       <div class="project p-4">
-        <img src="../img/node.png" alt="" />
+        <img src="../img/whotalks.png" alt="" />
+        <p id="project-title">🗣️ Who Talks</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quia
-          mollitia consectetur labore, nobis aliquid doloribus molestias
-          commodi? Reiciendis alias tempora impedit facilis eum rem pariatur
-          consequuntur est expedita iure.
+          'who-talks': is a web application designed to determine the most
+          active members in a group based on their messaging activity.
         </p>
+        <div class="features">
+          <span>✅ Uploading JSON</span>
+          <span>✅ Displaying Statistics</span>
+        </div>
+        <h3 style="color: aqua">🚀 💻 Tech Used</h3>
+        <div class="tech-stack">
+          <span>#HTML</span>
+          <img src="../img/HTML.png" alt="" />
+          <span>#CSS</span>
+          <img src="../img/CSS.png" alt="" />
+          <span>#Javascript</span>
+          <img src="../img/JAVASCRIPT.png" alt="" />
+        </div>
       </div>
 
-      <div class="project p-4">
+      <!-- <div class="project p-4">
         <img src="../img/node.png" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quia
@@ -137,10 +181,114 @@
           commodi? Reiciendis alias tempora impedit facilis eum rem pariatur
           consequuntur est expedita iure.
         </p>
-      </div>
+      </div> -->
     </div>
 
     <!--  -->
+
+    <div>
+      <span id="contact">Contact Me</span>
+    </div>
+    <div class="contact-container">
+      <main class="row">
+        <section class="col left">
+          <div class="contactTitle">
+            <h2>Get In Touch</h2>
+            <p>Ping me on socialMedia of your want.</p>
+          </div>
+
+          <div class="contactInfo">
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="details">
+                <span>Phone</span>
+                <span>+251901093626</span>
+              </div>
+            </div>
+
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="details">
+                <span>Email</span>
+                <span>abdulmejidamk@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="details">
+                <span>Location</span>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="socialMedia">
+            <a href="https://github.com/abdulmejidamk" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://twitter.com/abdulmejidamk" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/mejid_netcrawler/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mejid-netcrawler/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://t.me/netcrawler_ish" target="_blank"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+        </section>
+
+        <section class="col right">
+          <!--  *******   Form Starts   *******  -->
+
+          <form class="messageForm">
+            <div class="inputGroup halfWidth">
+              <input type="text" name="" required="required" />
+              <label>Your Name</label>
+            </div>
+
+            <div class="inputGroup halfWidth">
+              <input type="email" name="" required="required" />
+              <label>Email</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <input type="text" name="" required="required" />
+              <label>Subject</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <textarea required="required"></textarea>
+              <label>Say Something</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <button>Send Message</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <!-- footer -->
+    <footer id="dynamic-footer">
+      &copy; <span id="current-year"></span> | <span id="current-date"></span> |
+      <span id="time-counter"></span>
+    </footer>
   </body>
   <script src="../JS/app.js"></script>
 </html>

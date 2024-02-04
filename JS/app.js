@@ -1,4 +1,3 @@
-// Your skills array
 const skills = [
   { tech: "HTML", logo: "../img/HTML.png" },
   { tech: "CSS", logo: "../img/CSS.png" },
@@ -9,32 +8,57 @@ const skills = [
   { tech: "NODEJS", logo: "../img/node.png" },
   { tech: "Adobe Illustrator", logo: "../img/illustrator.png" },
 ];
+// if i further want to add a skill, i just need to add it to the skills array
 
- 
 const skillsContainer = document.getElementById("skills-container");
 
- 
 skills.forEach((skill) => {
- 
   const skillDiv = document.createElement("div");
   skillDiv.className = "skill";
 
-  // Create an image element for the logo
   const logoImg = document.createElement("img");
   logoImg.src = skill.logo;
   logoImg.alt = `${skill.tech} Logo`;
 
-  // Append the logo to the skill div
   skillDiv.appendChild(logoImg);
 
-  // Create a span for the tech name
   const techSpan = document.createElement("span");
   techSpan.textContent = skill.tech;
   techSpan.className = "tech-name";
 
-  // Append the tech name to the skill div
   skillDiv.appendChild(techSpan);
 
-  // Append the skill div to the skills container
   skillsContainer.appendChild(skillDiv);
+});
+
+function updateFooter() {
+  const currentYear = new Date().getFullYear();
+  const currentDate = new Date().toLocaleDateString();
+  const footerYear = document.getElementById("current-year");
+  const footerDate = document.getElementById("current-date");
+  const footerCounter = document.getElementById("time-counter");
+
+  footerYear.textContent = currentYear;
+  footerDate.textContent = currentDate;
+
+  // Time counter
+  let startTime = new Date().getTime();
+  setInterval(() => {
+    const currentTime = new Date().getTime();
+    const elapsedTime = currentTime - startTime;
+    const seconds = Math.floor(elapsedTime / 1000);
+    footerCounter.textContent = `Site uptime: ${seconds} seconds`;
+  }, 1000);
+}
+
+window.onload = updateFooter;
+
+// spinner
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const spinnerContainer = document.getElementById("spinner-container");
+    if (spinnerContainer) {
+      spinnerContainer.style.display = "none";
+    }
+  }, 1000);
 });
