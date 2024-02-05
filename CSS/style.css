@@ -360,6 +360,13 @@ section.left .contactTitle h2::after {
   top: calc(120% - 1px);
   left: 0;
 }
+
+.contactTitle,
+.contactInfo {
+  /* background-color: red; */
+  padding-left: 50px;
+  /* margin: auto; */
+}
 section.left .contactTitle p {
   font-size: 17px;
   color: #ccc;
@@ -554,7 +561,7 @@ form {
   #about {
     margin-top: 100px;
   }
-  .nav-list{
+  .nav-list {
     font-size: 12px;
   }
 }
