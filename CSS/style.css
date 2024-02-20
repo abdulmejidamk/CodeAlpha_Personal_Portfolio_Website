@@ -88,13 +88,13 @@ html {
 
 .nav-list a:hover {
   transform: sca(1.04);
-  transition: 0.3s;
+  transition: 0.3s ease;
   cursor: pointer;
   padding: 5px;
   transition: 0.3s;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   /* background-color: rgb(228, 196, 56); */
-  background-color: rgb(118, 44, 44);
+  background-color: rgb(184, 39, 39);
   color: white;
 }
 
@@ -113,7 +113,7 @@ html {
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  filter: opacity(70%);
+  /* filter: opacity(70%); */
 }
 
 .desc-span {
@@ -157,11 +157,11 @@ html {
 #graphic {
   background-image: linear-gradient(
     to right,
-    yellow,
+    rgb(0, 255, 170),
     rgb(37, 121, 81),
-    red,
-    rgb(62, 40, 158),
-    brown,
+    rgb(87, 98, 190),
+    rgb(150, 158, 40),
+    rgb(201, 141, 12),
     white
   );
   -webkit-background-clip: text;

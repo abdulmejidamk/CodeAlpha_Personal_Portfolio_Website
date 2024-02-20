@@ -4,6 +4,7 @@ const skills = [
   { tech: "JAVASCRIPT", logo: "../img/JAVASCRIPT.png" },
   { tech: "REACT", logo: "../img/REACT.png" },
   { tech: "MYSQL", logo: "../img/MYSQL.png" },
+  { tech: "PHP", logo: "../img/php.png" },
   { tech: "LINUX", logo: "../img/LINUX.png" },
   { tech: "NODEJS", logo: "../img/node.png" },
   { tech: "Adobe Illustrator", logo: "../img/illustrator.png" },
