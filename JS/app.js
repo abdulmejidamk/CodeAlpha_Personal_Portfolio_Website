@@ -40,7 +40,6 @@ function updateFooter() {
   const footerCounter = document.getElementById("time-counter");
 
   footerYear.textContent = currentYear;
-  footerDate.textContent = currentDate;
 
   // Time counter
   let startTime = new Date().getTime();
